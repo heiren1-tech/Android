@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 机器人图标（列表项 / ActionMode 列表使用） -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- 天线 -->
+    <path android:fillColor="#FF8BC34A" android:pathData="M7.0,4.3L5.7,2.5l1.7,-1.2L8.7,3.1z" />
+    <path android:fillColor="#FF8BC34A" android:pathData="M17.0,4.3l1.3,-1.8l-1.7,-1.2L15.3,3.1z" />
+
+    <!-- 头部 -->
+    <path android:fillColor="#FF8BC34A"
+        android:pathData="M6,5h12a2,2 0 0 1 2,2v3a2,2 0 0 1 -2,2H6a2,2 0 0 1 -2,-2V7a2,2 0 0 1 2,-2z" />
+
+    <!-- 眼睛 -->
+    <path android:fillColor="#FFFFFFFF" android:pathData="M8.6,7.6a1,1 0 1 0 0.001,0z" />
+    <path android:fillColor="#FFFFFFFF" android:pathData="M15.4,7.6a1,1 0 1 0 0.001,0z" />
+
+    <!-- 身体 -->
+    <path android:fillColor="#FF8BC34A" android:pathData="M5.5,12.8h13v5.4h-13z" />
+
+    <!-- 手臂 -->
+    <path android:fillColor="#FF8BC34A" android:pathData="M3.3,12.8h1.8v5h-1.8z" />
+    <path android:fillColor="#FF8BC34A" android:pathData="M18.9,12.8h1.8v5h-1.8z" />
+
+    <!-- 腿 -->
+    <path android:fillColor="#FF8BC34A" android:pathData="M8,18.2h2.1v2.6H8z" />
+    <path android:fillColor="#FF8BC34A" android:pathData="M13.9,18.2H16v2.6h-2.1z" />
+</vector>

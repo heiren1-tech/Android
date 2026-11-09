@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">记事本</string>
+
+    <string name="search_hint">搜索标题或内容</string>
+    <string name="empty_no_notes">还没有笔记，点击右下角 + 新建</string>
+    <string name="empty_no_result">没有找到匹配的笔记</string>
+
+    <string name="menu_sort">排序</string>
+    <string name="sort_updated_desc">按修改时间（新→旧）</string>
+    <string name="sort_updated_asc">按修改时间（旧→新）</string>
+    <string name="sort_title">按标题</string>
+    <string name="menu_theme_dark">切换到深色主题</string>
+    <string name="menu_theme_light">切换到浅色主题</string>
+    <string name="menu_export_all">导出全部笔记</string>
+
+    <string name="menu_save">保存</string>
+    <string name="menu_share">分享</string>
+    <string name="menu_color">笔记颜色</string>
+    <string name="menu_delete">删除笔记</string>
+
+    <string name="note_untitled">(无标题)</string>
+    <string name="note_empty">暂无内容</string>
+    <string name="time_prefix">修改时间：</string>
+
+    <string name="title_new_note">新建笔记</string>
+    <string name="title_edit_note">编辑笔记</string>
+
+    <string name="delete_title">删除笔记</string>
+    <string name="delete_message">确定要删除这条笔记吗？</string>
+    <string name="delete">删除</string>
+    <string name="cancel">取消</string>
+
+    <string name="saved">已保存</string>
+    <string name="deleted">已删除</string>
+    <string name="empty_note_not_saved">没有可保存的内容</string>
+    <string name="share_note">分享笔记</string>
+    <string name="export_all">导出全部笔记</string>
+    <string name="export_all_empty">还没有可导出的笔记</string>
+
+    <string name="editor_title_hint">标题</string>
+    <string name="editor_content_hint">开始输入内容…</string>
+
+    <string name="color_default">默认</string>
+    <string name="color_yellow">黄色</string>
+    <string name="color_green">绿色</string>
+    <string name="color_blue">蓝色</string>
+    <string name="color_pink">粉色</string>
+    <string name="color_purple">紫色</string>
+    <string name="color_orange">橙色</string>
+</resources>

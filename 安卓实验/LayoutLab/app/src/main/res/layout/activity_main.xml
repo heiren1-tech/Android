@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/menu_title"
+        android:textColor="#FF222222"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/menu_subtitle"
+        android:textColor="#FF888888"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_linear"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/bg_menu_btn"
+        android:text="@string/menu_linear"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_table"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/bg_menu_btn"
+        android:text="@string/menu_table"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_constraint1"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/bg_menu_btn"
+        android:text="@string/menu_constraint1"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_constraint2"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/bg_menu_btn"
+        android:text="@string/menu_constraint2"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_compose"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/bg_menu_btn"
+        android:text="@string/menu_compose"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

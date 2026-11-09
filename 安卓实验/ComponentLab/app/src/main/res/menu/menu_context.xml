@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 课件示例：浮动的上下文菜单（长按某一项弹出） -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/ctx_open" android:title="打开" />
+    <item android:id="@+id/ctx_rename" android:title="重命名" />
+    <item android:id="@+id/ctx_delete" android:title="删除" />
+</menu>

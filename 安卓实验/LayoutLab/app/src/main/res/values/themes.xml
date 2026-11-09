@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 浅色主题（主页、约束布局、Compose） -->
+    <style name="AppThemeLight" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <!-- 深色主题（线性布局、表格布局） -->
+    <style name="AppThemeDark" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+</resources>

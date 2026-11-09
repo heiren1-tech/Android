@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    实验1：线性布局（LinearLayout）
+    用 4 个水平线性布局（行）嵌套在 1 个垂直线性布局中实现 4x4 网格；
+    第二列较宽，通过 layout_weight 控制各列宽度比例。
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <!-- 第一行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="2.1"
+            android:background="@drawable/bg_grid_btn"
+            android:text="@string/one_one"
+            android:textAllCaps="false"
+            android:textColor="@color/grid_text"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="3.5"
+            android:background="@drawable/bg_grid_btn"
+            android:text="@string/one_two"
+            android:textAllCaps="false"
+            android:textColor="@color/grid_text"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/bg_grid_btn"
+            android:text="@string/one_three"
+            android:textAllCaps="false"
+            android:textColor="@color/grid_text"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="2.0"
+            android:background="@drawable/bg_grid_btn"
+            android:text="@string/one_four"
+            android:textAllCaps="false"
+            android:textColor="@color/grid_text"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- 第二行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="2.1"
+            android:background="@drawable/bg_grid_btn"
+            android:text="@string/two_one"
+            android:textAllCaps="false"
+            android:textColor="@color/grid_text"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="3.5"
+            android:background="@drawable/bg_grid_btn"
+            android:text="@string/two_two"
+            android:textAllCaps="false"
+            android:textColor="@color/grid_text"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/bg_grid_btn"
+            android:text="@string/two_three"
+            android:textAllCaps="false"
+            android:textColor="@color/grid_text"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="2.0"
+            android:background="@drawable/bg_grid_btn"
+            android:text="@string/two_four"
+            android:textAllCaps="false"
+            android:textColor="@color/grid_text"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- 第三行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="2.1"
+            android:background="@drawable/bg_grid_btn"
+            android:text="@string/three_one"
+            android:textAllCaps="false"
+            android:textColor="@color/grid_text"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="3.5"
+            android:background="@drawable/bg_grid_btn"
+            android:text="@string/three_two"
+            android:textAllCaps="false"
+            android:textColor="@color/grid_text"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/bg_grid_btn"
+            android:text="@string/three_three"
+            android:textAllCaps="false"
+            android:textColor="@color/grid_text"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="2.0"
+            android:background="@drawable/bg_grid_btn"
+            android:text="@string/three_four"
+            android:textAllCaps="false"
+            android:textColor="@color/grid_text"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- 第四行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="2.1"
+            android:background="@drawable/bg_grid_btn"
+            android:text="@string/four_one"
+            android:textAllCaps="false"
+            android:textColor="@color/grid_text"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="3.5"
+            android:background="@drawable/bg_grid_btn"
+            android:text="@string/four_two"
+            android:textAllCaps="false"
+            android:textColor="@color/grid_text"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/bg_grid_btn"
+            android:text="@string/four_three"
+            android:textAllCaps="false"
+            android:textColor="@color/grid_text"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="2.0"
+            android:background="@drawable/bg_grid_btn"
+            android:text="@string/four_four"
+            android:textAllCaps="false"
+            android:textColor="@color/grid_text"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

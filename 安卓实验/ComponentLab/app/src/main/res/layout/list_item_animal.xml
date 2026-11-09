@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 实验3-1 列表项：左边文字，右边图片 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="12dp"
+    android:paddingEnd="8dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#FF212121"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_animal"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:contentDescription="@string/animal_lion"
+        android:scaleType="centerCrop" />
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">实验3-Android界面组件</string>
+
+    <!-- 入口菜单 -->
+    <string name="menu_title">Android 界面组件实验</string>
+    <string name="section_exp3">实验3：Android 界面组件</string>
+    <string name="section_ui">课件示例：用户交互组件</string>
+    <string name="exp1_title">1. ListView 的用法（SimpleAdapter）</string>
+    <string name="exp2_title">2. 自定义布局的 AlertDialog</string>
+    <string name="exp3_title">3. 使用 XML 定义菜单</string>
+    <string name="exp4_title">4. ActionMode 形式的上下文菜单</string>
+    <string name="exp5_title">5. RecyclerView 列表视图</string>
+    <string name="demo_button">Button / ImageButton / ToggleButton 事件</string>
+    <string name="demo_check">利用单选钮、复选框获取用户信息</string>
+    <string name="demo_notification">Notification 通知</string>
+    <string name="demo_dialog">AlertDialog 提醒对话框</string>
+    <string name="demo_optionmenu">OptionsMenu 选项菜单</string>
+    <string name="demo_contextmenu">ContextMenu 上下文菜单</string>
+    <string name="demo_popupmenu">PopupMenu 弹出菜单</string>
+
+    <!-- 动物名称 -->
+    <string name="animal_lion">Lion</string>
+    <string name="animal_tiger">Tiger</string>
+    <string name="animal_monkey">Monkey</string>
+    <string name="animal_dog">Dog</string>
+    <string name="animal_cat">Cat</string>
+    <string name="animal_elephant">Elephant</string>
+    <string name="animal_panda">Panda</string>
+
+    <!-- 实验3-1 -->
+    <string name="selected_prefix">选中了：</string>
+    <string name="notify_content_default">来自实验3 ListView 的通知内容</string>
+
+    <!-- 实验3-2 -->
+    <string name="open_custom_dialog">打开自定义布局对话框</string>
+    <string name="dialog_title_text">ANDROID APP</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_sign_in">Sign in</string>
+    <string name="sign_in_success">登录成功！</string>
+
+    <!-- 实验3-3 -->
+    <string name="test_content">用于测试的内容</string>
+    <string name="font_size">字体大小</string>
+    <string name="size_small">小</string>
+    <string name="size_medium">中</string>
+    <string name="size_large">大</string>
+    <string name="normal_item">普通菜单项</string>
+    <string name="normal_item_toast">点击了普通菜单项</string>
+    <string name="font_color">字体颜色</string>
+    <string name="color_red">红色</string>
+    <string name="color_black">黑色</string>
+
+    <!-- 实验3-4 -->
+    <string name="item_one">One</string>
+    <string name="item_two">Two</string>
+    <string name="item_three">Three</string>
+    <string name="item_four">Four</string>
+    <string name="item_five">Five</string>
+    <string name="action_delete">删除</string>
+    <string name="selected_count">%1$d selected</string>
+    <string name="deleted_toast">已删除选中的项</string>
+
+    <!-- 实验3-5 -->
+    <string name="recycler_hint">点击列表项可新增一条记录</string>
+    <string name="added_toast">已新增：%1$s</string>
+
+    <!-- 课件示例 -->
+    <string name="btn_normal">普通按钮</string>
+    <string name="btn_image">ImageButton</string>
+    <string name="btn_toggle">ToggleButton</string>
+    <string name="clicked">你点击了：%1$s</string>
+    <string name="gender">性别：</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="favorite_color">喜欢的颜色：</string>
+    <string name="color_red_option">红色</string>
+    <string name="color_blue_option">蓝色</string>
+    <string name="color_green_option">绿色</string>
+    <string name="gender_result">您的性别是%1$s</string>
+    <string name="send_notification">发送通知</string>
+    <string name="notification_title">实验3 通知</string>
+    <string name="notification_text">这是一条来自 NotificationManager 的通知</string>
+    <string name="show_dialog">显示提醒对话框</string>
+    <string name="dialog_msg">这是一条提醒消息，点击按钮确认或取消。</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="show_popup">显示弹出菜单</string>
+</resources>
