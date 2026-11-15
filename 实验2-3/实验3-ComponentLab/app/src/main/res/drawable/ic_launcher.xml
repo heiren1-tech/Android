@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 应用程序图标：Android 机器人（同时作为通知的小图标） -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:translateX="18"
+        android:translateY="18"
+        android:scaleX="3"
+        android:scaleY="3">
+        <path android:fillColor="#FF8BC34A" android:pathData="M7.0,4.3L5.7,2.5l1.7,-1.2L8.7,3.1z" />
+        <path android:fillColor="#FF8BC34A" android:pathData="M17.0,4.3l1.3,-1.8l-1.7,-1.2L15.3,3.1z" />
+        <path android:fillColor="#FF8BC34A"
+            android:pathData="M6,5h12a2,2 0 0 1 2,2v3a2,2 0 0 1 -2,2H6a2,2 0 0 1 -2,-2V7a2,2 0 0 1 2,-2z" />
+        <path android:fillColor="#FFFFFFFF" android:pathData="M8.6,7.6a1,1 0 1 0 0.001,0z" />
+        <path android:fillColor="#FFFFFFFF" android:pathData="M15.4,7.6a1,1 0 1 0 0.001,0z" />
+        <path android:fillColor="#FF8BC34A" android:pathData="M5.5,12.8h13v5.4h-13z" />
+        <path android:fillColor="#FF8BC34A" android:pathData="M3.3,12.8h1.8v5h-1.8z" />
+        <path android:fillColor="#FF8BC34A" android:pathData="M18.9,12.8h1.8v5h-1.8z" />
+        <path android:fillColor="#FF8BC34A" android:pathData="M8,18.2h2.1v2.6H8z" />
+        <path android:fillColor="#FF8BC34A" android:pathData="M13.9,18.2H16v2.6h-2.1z" />
+    </group>
+</vector>

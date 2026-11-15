@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FF37474F</color>
+    <color name="primary_dark">#FF263238</color>
+    <color name="accent">#FF009688</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="text_gray">#FF757575</color>
+
+    <!-- 对话框标题栏（橙色） -->
+    <color name="dialog_title">#FFFFA726</color>
+    <color name="dialog_body">#FFF2F2F2</color>
+
+    <!-- 列表选中项背景（实验3-1 中 Elephant 高亮） -->
+    <color name="item_selected">#FF7B1E1E</color>
+    <color name="divider">#FFBDBDBD</color>
+
+    <!-- 上下文菜单选中高亮 -->
+    <color name="action_selected">#FF33B5E5</color>
+</resources>

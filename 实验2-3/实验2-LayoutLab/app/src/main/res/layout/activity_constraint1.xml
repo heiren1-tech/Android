@@ -1,0 +1,342 @@
+﻿﻿﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+    实验3：约束布局1（ConstraintLayout 实现计算器界面）
+    顶部青色标题栏；"Input" 提示 + 卡其色结果显示框；
+    数字键盘 4 行 4 列：7 8 9 ÷ / 4 5 6 × / 1 2 3 + / . 0 = −，
+    通过 3 条 25%/50%/75% 垂直辅助线将屏幕四等分。
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- 标题栏 -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/calc_teal"
+        android:padding="12dp"
+        android:text="@string/calc_title"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Input 提示 -->
+    <TextView
+        android:id="@+id/tv_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/calc_input"
+        android:textColor="@color/calc_hint"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <!-- 结果显示框 -->
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_khaki"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="8dp"
+        android:text="@string/calc_result"
+        android:textColor="#FF3A3A3A"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_input" />
+
+    <!-- 垂直辅助线：屏幕四等分 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <!-- ===== 第一行：7 8 9 ÷ ===== -->
+    <Button
+        android:id="@+id/btn_7"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/bg_calc_btn"
+        android:text="@string/btn_7"
+        android:textAllCaps="false"
+        android:textColor="@color/calc_btn_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/guide_25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_result" />
+
+    <Button
+        android:id="@+id/btn_8"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/bg_calc_btn"
+        android:text="@string/btn_8"
+        android:textAllCaps="false"
+        android:textColor="@color/calc_btn_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/guide_50"
+        app:layout_constraintStart_toEndOf="@id/guide_25"
+        app:layout_constraintTop_toBottomOf="@id/tv_result" />
+
+    <Button
+        android:id="@+id/btn_9"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/bg_calc_btn"
+        android:text="@string/btn_9"
+        android:textAllCaps="false"
+        android:textColor="@color/calc_btn_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/guide_75"
+        app:layout_constraintStart_toEndOf="@id/guide_50"
+        app:layout_constraintTop_toBottomOf="@id/tv_result" />
+
+    <Button
+        android:id="@+id/btn_div"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/bg_calc_btn"
+        android:text="@string/btn_div"
+        android:textAllCaps="false"
+        android:textColor="@color/calc_btn_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guide_75"
+        app:layout_constraintTop_toBottomOf="@id/tv_result" />
+
+    <!-- ===== 第二行：4 5 6 × ===== -->
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg_calc_btn"
+        android:text="@string/btn_4"
+        android:textAllCaps="false"
+        android:textColor="@color/calc_btn_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/guide_25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_7" />
+
+    <Button
+        android:id="@+id/btn_5"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg_calc_btn"
+        android:text="@string/btn_5"
+        android:textAllCaps="false"
+        android:textColor="@color/calc_btn_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/guide_50"
+        app:layout_constraintStart_toEndOf="@id/guide_25"
+        app:layout_constraintTop_toBottomOf="@id/btn_8" />
+
+    <Button
+        android:id="@+id/btn_6"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg_calc_btn"
+        android:text="@string/btn_6"
+        android:textAllCaps="false"
+        android:textColor="@color/calc_btn_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/guide_75"
+        app:layout_constraintStart_toEndOf="@id/guide_50"
+        app:layout_constraintTop_toBottomOf="@id/btn_9" />
+
+    <Button
+        android:id="@+id/btn_mul"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg_calc_btn"
+        android:text="@string/btn_mul"
+        android:textAllCaps="false"
+        android:textColor="@color/calc_btn_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guide_75"
+        app:layout_constraintTop_toBottomOf="@id/btn_div" />
+
+    <!-- ===== 第三行：1 2 3 + ===== -->
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg_calc_btn"
+        android:text="@string/btn_1"
+        android:textAllCaps="false"
+        android:textColor="@color/calc_btn_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/guide_25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_4" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg_calc_btn"
+        android:text="@string/btn_2"
+        android:textAllCaps="false"
+        android:textColor="@color/calc_btn_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/guide_50"
+        app:layout_constraintStart_toEndOf="@id/guide_25"
+        app:layout_constraintTop_toBottomOf="@id/btn_5" />
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg_calc_btn"
+        android:text="@string/btn_3"
+        android:textAllCaps="false"
+        android:textColor="@color/calc_btn_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/guide_75"
+        app:layout_constraintStart_toEndOf="@id/guide_50"
+        app:layout_constraintTop_toBottomOf="@id/btn_6" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg_calc_btn"
+        android:text="@string/btn_add"
+        android:textAllCaps="false"
+        android:textColor="@color/calc_btn_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guide_75"
+        app:layout_constraintTop_toBottomOf="@id/btn_mul" />
+
+    <!-- ===== 第四行：. 0 = − ===== -->
+    <Button
+        android:id="@+id/btn_dot"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg_calc_btn"
+        android:text="@string/btn_dot"
+        android:textAllCaps="false"
+        android:textColor="@color/calc_btn_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/guide_25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_1" />
+
+    <Button
+        android:id="@+id/btn_0"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg_calc_btn"
+        android:text="@string/btn_0"
+        android:textAllCaps="false"
+        android:textColor="@color/calc_btn_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/guide_50"
+        app:layout_constraintStart_toEndOf="@id/guide_25"
+        app:layout_constraintTop_toBottomOf="@id/btn_2" />
+
+    <Button
+        android:id="@+id/btn_eq"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg_calc_btn"
+        android:text="@string/btn_eq"
+        android:textAllCaps="false"
+        android:textColor="@color/calc_btn_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/guide_75"
+        app:layout_constraintStart_toEndOf="@id/guide_50"
+        app:layout_constraintTop_toBottomOf="@id/btn_3" />
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg_calc_btn"
+        android:text="@string/btn_sub"
+        android:textAllCaps="false"
+        android:textColor="@color/calc_btn_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guide_75"
+        app:layout_constraintTop_toBottomOf="@id/btn_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

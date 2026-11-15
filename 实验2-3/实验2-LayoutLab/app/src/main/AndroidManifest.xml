@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppThemeLight">
+
+        <!-- 实验主页：入口菜单 -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:fitsSystemWindows="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 实验1：线性布局 -->
+        <activity
+            android:name=".LinearLayoutActivity"
+            android:exported="false"
+            android:fitsSystemWindows="true"
+            android:label="线性布局"
+            android:theme="@style/AppThemeDark" />
+
+        <!-- 实验2：表格布局 -->
+        <activity
+            android:name=".TableLayoutActivity"
+            android:exported="false"
+            android:fitsSystemWindows="true"
+            android:label="Hello TableLayout"
+            android:theme="@style/AppThemeDark" />
+
+        <!-- 实验3：约束布局1（计算器界面） -->
+        <activity
+            android:name=".Constraint1Activity"
+            android:exported="false"
+            android:fitsSystemWindows="true"
+            android:label="ConstraintLayoutTest" />
+
+        <!-- 实验4：约束布局2（火星旅行界面） -->
+        <activity
+            android:name=".Constraint2Activity"
+            android:exported="false"
+            android:fitsSystemWindows="true"
+            android:label="ConstraintLayout 火星旅行" />
+
+        <!-- 实验5：Compose 任务列表 -->
+        <activity
+            android:name=".TaskListActivity"
+            android:exported="false"
+            android:fitsSystemWindows="true"
+            android:label="Compose 任务列表" />
+    </application>
+
+</manifest>

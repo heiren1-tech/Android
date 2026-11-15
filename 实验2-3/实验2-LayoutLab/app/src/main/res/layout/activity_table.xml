@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    实验2：表格布局（TableLayout）
+    用 TableRow 组织菜单行，stretchColumns="1" 让第 2 列拉伸，
+    快捷键列内容右对齐；两条分隔线把菜单分成三组。
+-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/table_bg"
+    android:stretchColumns="1">
+
+    <!-- 标题行 -->
+    <TableRow>
+        <TextView
+            android:layout_span="2"
+            android:background="@color/table_title_bg"
+            android:padding="8dp"
+            android:text="@string/table_title"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <!-- Open... Ctrl-O -->
+    <TableRow>
+        <TextView
+            android:padding="6dp"
+            android:text="@string/menu_open"
+            android:textColor="@color/table_text"
+            android:textSize="17sp" />
+
+        <TextView
+            android:gravity="right"
+            android:padding="6dp"
+            android:text="@string/shortcut_open"
+            android:textColor="@color/table_text"
+            android:textSize="17sp" />
+    </TableRow>
+
+    <!-- Save... Ctrl-S -->
+    <TableRow>
+        <TextView
+            android:padding="6dp"
+            android:text="@string/menu_save"
+            android:textColor="@color/table_text"
+            android:textSize="17sp" />
+
+        <TextView
+            android:gravity="right"
+            android:padding="6dp"
+            android:text="@string/shortcut_save"
+            android:textColor="@color/table_text"
+            android:textSize="17sp" />
+    </TableRow>
+
+    <!-- Save As... Ctrl-Shift-S -->
+    <TableRow>
+        <TextView
+            android:padding="6dp"
+            android:text="@string/menu_save_as"
+            android:textColor="@color/table_text"
+            android:textSize="17sp" />
+
+        <TextView
+            android:gravity="right"
+            android:padding="6dp"
+            android:text="@string/shortcut_save_as"
+            android:textColor="@color/table_text"
+            android:textSize="17sp" />
+    </TableRow>
+
+    <!-- 分隔线 -->
+    <View
+        android:layout_height="3dp"
+        android:background="@color/table_divider" />
+
+    <!-- X Import... -->
+    <TableRow>
+        <TextView
+            android:padding="6dp"
+            android:text="@string/menu_import"
+            android:textColor="@color/table_text"
+            android:textSize="17sp" />
+
+        <TextView
+            android:gravity="right"
+            android:padding="6dp"
+            android:text=""
+            android:textColor="@color/table_text"
+            android:textSize="17sp" />
+    </TableRow>
+
+    <!-- X Export... Ctrl-E -->
+    <TableRow>
+        <TextView
+            android:padding="6dp"
+            android:text="@string/menu_export"
+            android:textColor="@color/table_text"
+            android:textSize="17sp" />
+
+        <TextView
+            android:gravity="right"
+            android:padding="6dp"
+            android:text="@string/shortcut_export"
+            android:textColor="@color/table_text"
+            android:textSize="17sp" />
+    </TableRow>
+
+    <!-- 分隔线 -->
+    <View
+        android:layout_height="3dp"
+        android:background="@color/table_divider" />
+
+    <!-- Quit -->
+    <TableRow>
+        <TextView
+            android:padding="6dp"
+            android:text="@string/menu_quit"
+            android:textColor="@color/table_text"
+            android:textSize="17sp" />
+
+        <TextView
+            android:gravity="right"
+            android:padding="6dp"
+            android:text=""
+            android:textColor="@color/table_text"
+            android:textSize="17sp" />
+    </TableRow>
+</TableLayout>

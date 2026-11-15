@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 实验3-3：使用 XML 定义菜单 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 字体大小：小=10sp，中=16sp，大=20sp -->
+    <item
+        android:id="@+id/menu_font_size"
+        android:title="@string/font_size">
+        <menu>
+            <item android:id="@+id/size_small" android:title="@string/size_small" />
+            <item android:id="@+id/size_medium" android:title="@string/size_medium" />
+            <item android:id="@+id/size_large" android:title="@string/size_large" />
+        </menu>
+    </item>
+
+    <!-- 普通菜单项 -->
+    <item
+        android:id="@+id/menu_normal"
+        android:title="@string/normal_item" />
+
+    <!-- 字体颜色：红色 / 黑色 -->
+    <item
+        android:id="@+id/menu_font_color"
+        android:title="@string/font_color">
+        <menu>
+            <item android:id="@+id/color_red" android:title="@string/color_red" />
+            <item android:id="@+id/color_black" android:title="@string/color_black" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 线性布局（深色网格按钮） -->
+    <color name="grid_fill">#FF151515</color>
+    <color name="grid_border">#FF8F8F8F</color>
+    <color name="grid_text">#FFC8C8C8</color>
+
+    <!-- 表格布局 -->
+    <color name="table_bg">#FF1B1B1B</color>
+    <color name="table_title_bg">#FFD8D8D8</color>
+    <color name="table_text">#FFEEEEEE</color>
+    <color name="table_divider">#FF909090</color>
+
+    <!-- 约束布局1（计算器） -->
+    <color name="calc_teal">#FF00896F</color>
+    <color name="calc_hint">#FF757575</color>
+    <color name="calc_khaki">#FFBDB76B</color>
+    <color name="calc_btn">#FFE2E2E2</color>
+    <color name="calc_btn_text">#FF5F5F5F</color>
+
+    <!-- 约束布局2（火星旅行） -->
+    <color name="mars_green">#FF2E6B2E</color>
+    <color name="mars_orange">#FFB2621D</color>
+    <color name="mars_topbar">#FFEAEAEA</color>
+    <color name="mars_icon">#FF5A5A5A</color>
+    <color name="mars_label">#FF444444</color>
+
+    <!-- 主页菜单 -->
+    <color name="menu_blue">#FF3C6E91</color>
+</resources>

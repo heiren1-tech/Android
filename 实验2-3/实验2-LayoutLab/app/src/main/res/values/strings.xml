@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">实验2-Android界面布局</string>
+
+    <!-- 主页菜单 -->
+    <string name="menu_title">实验二 Android 界面布局</string>
+    <string name="menu_subtitle">点击进入各实验界面</string>
+    <string name="menu_linear">1. 线性布局 LinearLayout</string>
+    <string name="menu_table">2. 表格布局 TableLayout</string>
+    <string name="menu_constraint1">3. 约束布局 ConstraintLayout（计算器）</string>
+    <string name="menu_constraint2">4. 约束布局 ConstraintLayout（火星旅行）</string>
+    <string name="menu_compose">5. Compose 任务列表</string>
+
+    <!-- 实验1：线性布局按钮文字 -->
+    <string name="one_one">One,One</string>
+    <string name="one_two">One,Two</string>
+    <string name="one_three">One,Three</string>
+    <string name="one_four">One,Four</string>
+    <string name="two_one">Two,One</string>
+    <string name="two_two">Two,Two</string>
+    <string name="two_three">Two,Three</string>
+    <string name="two_four">Two,Four</string>
+    <string name="three_one">Three,One</string>
+    <string name="three_two">Three,Two</string>
+    <string name="three_three">Three,Three</string>
+    <string name="three_four">Three,Four</string>
+    <string name="four_one">Four,One</string>
+    <string name="four_two">Four,Two</string>
+    <string name="four_three">Four,Three</string>
+    <string name="four_four">Four,Four</string>
+
+    <!-- 实验2：表格布局 -->
+    <string name="table_title">Hello TableLayout</string>
+    <string name="menu_open">Open…</string>
+    <string name="menu_save">Save…</string>
+    <string name="menu_save_as">Save As…</string>
+    <string name="menu_import">X Import…</string>
+    <string name="menu_export">X Export…</string>
+    <string name="menu_quit">Quit</string>
+    <string name="shortcut_open">Ctrl-O</string>
+    <string name="shortcut_save">Ctrl-S</string>
+    <string name="shortcut_save_as">Ctrl-Shift-S</string>
+    <string name="shortcut_export">Ctrl-E</string>
+
+    <!-- 实验3：约束布局1 -->
+    <string name="calc_title">ConstraintLayoutTest</string>
+    <string name="calc_input">Input</string>
+    <string name="calc_result">0.0</string>
+    <string name="btn_7">7</string>
+    <string name="btn_8">8</string>
+    <string name="btn_9">9</string>
+    <string name="btn_div">÷</string>
+    <string name="btn_4">4</string>
+    <string name="btn_5">5</string>
+    <string name="btn_6">6</string>
+    <string name="btn_mul">×</string>
+    <string name="btn_1">1</string>
+    <string name="btn_2">2</string>
+    <string name="btn_3">3</string>
+    <string name="btn_add">+</string>
+    <string name="btn_dot">.</string>
+    <string name="btn_0">0</string>
+    <string name="btn_eq">=</string>
+    <string name="btn_sub">−</string>
+
+    <!-- 实验4：约束布局2 -->
+    <string name="tab_space_stations">Space Stations</string>
+    <string name="tab_flights">Flights</string>
+    <string name="tab_rovers">Rovers</string>
+    <string name="from_dca">DCA</string>
+    <string name="to_mars">MARS</string>
+    <string name="one_way">One Way</string>
+    <string name="traveller">1 Traveller</string>
+    <string name="depart">DEPART</string>
+</resources>
